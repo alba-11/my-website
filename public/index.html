@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <div class="content">
+        <h1>Our Relationship, Now a Website</h1>
+        <p>Hey, babe. Yes, you've heard it (or read it I guess). I, your genius girlfriend, have created a website for our relationship. Why? Mainly because I needed a project to work on. Anyways, I love you, have fun exploring the website.</p>
+        <div class="container">
+            <div class="box" onclick="location.href='countdowns.html'">Countdowns</div>
+            <div class="box" onclick="location.href='assets/love-story-timeline.html'">Love Story Timeline</div>
+            <div class="box" onclick="location.href='bucket-list-adventure.html'">Bucket List Adventure</div>
+            <div class="box" onclick="location.href='assets/wherewevebeenwhereweregoing.html'">
+                Where We've been and Where We're Going
+            </div>
+            <div class="box" onclick="location.href='hall-of-fame.html'">Hall of Fame</div>
+            <div class="box" onclick="location.href='our-menu.html'">Our Menu</div>
+        </div>
+        <p>Or if you're done with that, you can help me by adding suggestions in the box below to what is missing in this website, or aspects to improve:</p>
+        <form id="suggestion-form" onsubmit="handleFormSubmit(event)">
+            <textarea id="suggestion-box" placeholder="Type your suggestions here..."></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
